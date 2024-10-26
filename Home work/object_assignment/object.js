@@ -60,7 +60,7 @@ console.log(new_car);
 
 // Write a function that loops through an object and prints each property and its value.
 
-function name() {
+function info_Of_Myself() {
 const obj5 = {
     name: 'tushar',
     age: 25,
