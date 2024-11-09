@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <title>JS_DOM</title>
+</head>
+<body>
+  <h2 class="text-4xl font-bold">Welcome to JS_DOM</h2>
+  <p class="text-base p_tag">DOM Assignment</p>
+  <ul>
+    <div class="fruit w-[200px] h-[250px]">
+      <h3>Fruits</h3>
+      <li>apple</li>
+      <li>banana</li>
+      <li>orange</li>
+      <li>mango</li>
+      <li>grape</li>
+    </div>
+    <div class="vegetable w-[200px] h-[250px]">
+      <h3>Vegetables</h3>
+      <li>carrot</li>
+      <li>potato</li>
+      <li>onion</li>
+      <li>garlic</li>
+      <li>ginger</li>
+    </div>
+    <div class="fish w-[200px] h-[250px]">
+      <h3>Fish</h3>
+      <li>salmon</li>
+      <li>tuna</li>
+      <li>cod</li>
+      <li>trout</li>
+      <li>shark</li>
+    </div>
+    <div class="birds w-[200px] h-[250px]">
+      <h3>Birds</h3>
+      <li>parrot</li>
+      <li>peacock</li>
+      <li>ostrich</li>
+      <li>penguin</li>
+      <li>eagle</li>
+    </div>
+    <div class="animals w-[200px] h-[250px]">
+      <h3>Animals</h3>
+      <li>lion</li>
+      <li>tiger</li>
+      <li>elephant</li>
+      <li>zebra</li>
+      <li>giraffe</li>
+    </div>
+    <div class="insects w-[200px] h-[250px]">
+      <h3>Insects</h3>
+      <li>butterfly</li>
+      <li>ant</li>
+      <li>bee</li>
+      <li>grasshopper</li>
+      <li>ladybug</li>
+    </div>
+    <div class="PL w-[200px] h-[250px]">
+      <h3>Programming Languages</h3>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>Ruby</li>
+    </div>
+  </ul>
+
+  <script>
+    document.body.classList.add("bg-yellow-400");
+    const h2 = document.querySelector("h2");
+    h2.classList.add("text-2xl", "text-white", "font-bold", "bg-blue-500","p-4","m-4","text-center","rounded-md");
+
+    const ul = document.querySelector("ul");
+    ul.classList.add("flex", "flex-wrap", "justify-center", "items-center", "gap-6");
+
+// Fruit section
+const liItems = document.querySelectorAll(".fruit li");
+liItems[3].classList.add("text-white");
+const fruit_h3 = document.querySelector(".fruit h3");
+fruit_h3.classList.add("text-red-700", "font-bold", "text-lg");
+const fruitClass = document.querySelector(".fruit");
+fruitClass.classList.add("bg-yellow-500", "text-black", "p-3", "m-2", "rounded-md", "text-center", "font-bold", "text-lg");
+
+// Vegetable section
+const liItems2 = document.querySelectorAll(".vegetable li");
+liItems2[2].classList.add("text-orange-700");
+const vegetable_h3 = document.querySelector(".vegetable h3");
+vegetable_h3.classList.add("text-indigo-700", "font-bold", "text-lg");
+const vegetableClass = document.querySelector(".vegetable");
+vegetableClass.classList.add("bg-green-500", "text-black", "p-3", "m-2", "rounded-md", "text-center", "font-bold", "text-lg");
+
+// Fish section
+const liItems3 = document.querySelectorAll(".fish li");
+liItems3[1].classList.add("text-green-500");
+const fish_h3 = document.querySelector(".fish h3");
+fish_h3.classList.add("text-blue-700", "font-bold", "text-lg");
+const fishClass = document.querySelector(".fish");
+fishClass.classList.add("bg-red-500", "text-black", "p-3", "m-2", "rounded-md", "text-center", "font-bold", "text-lg");
+
+// Birds section
+const liItems4 = document.querySelectorAll(".birds li");
+liItems4[2].classList.add("text-yellow-500");
+const birds_h3 = document.querySelector(".birds h3");
+birds_h3.classList.add("text-teal-700", "font-bold", "text-lg");
+const birdsClass = document.querySelector(".birds");
+birdsClass.classList.add("bg-blue-500", "text-black", "p-3", "m-2", "rounded-md", "text-center", "font-bold", "text-lg");
+
+// Animals section
+const liItems5 = document.querySelectorAll(".animals li");
+liItems5[2].classList.add("text-white");
+const animals_h3 = document.querySelector(".animals h3");
+animals_h3.classList.add("text-purple-700", "font-bold", "text-lg");
+const animalsClass = document.querySelector(".animals");
+animalsClass.classList.add("bg-purple-500", "text-black", "p-3", "m-2", "rounded-md", "text-center", "font-bold", "text-lg");
+
+// Insects section
+const liItems6 = document.querySelectorAll(".insects li");
+liItems6[2].classList.add("text-cyan-700");
+const insects_h3 = document.querySelector(".insects h3");
+insects_h3.classList.add("text-purple-700", "font-bold", "text-lg");
+const insectsClass = document.querySelector(".insects");
+insectsClass.classList.add("bg-orange-500", "text-black", "p-3", "m-2", "rounded-md", "text-center", "font-bold", "text-lg");
+
+// Programming Languages section
+const liItems7 = document.querySelectorAll(".PL li");
+liItems7[2].classList.add("text-white");
+
+const pl_h3 = document.querySelector(".PL h3");
+pl_h3.classList.add("text-yellow-500", "font-bold", "text-lg");
+
+const plClass = document.querySelector(".PL");
+plClass.classList.add("bg-pink-500", "text-black", "p-3", "m-2", "rounded-md", "text-center", "font-bold", "text-lg");
+
+    const pTag = document.getElementsByClassName("p_tag");
+    pTag[0].classList.add("text-base", "font-bold", "bg-blue-300","p-4","m-4","text-center","rounded-md");
+  </script>
+</body>
+</html>
